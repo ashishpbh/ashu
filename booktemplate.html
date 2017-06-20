@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Book Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+@media only screen and (max-width: 800px) 
+{
+    #backimage
+    {
+	
+    
+    background-repeat:no-repeat;
+	background-image: none;
+      background-color: #6699cc;}
+}
+</style> 
+
+
+  
+</head>
+<body background="image/bk.jpg" id="backimage" class="img-responsive" alt="Cinque Terre"  >  
+ 
+<div class="container-fluid">
+<div class="row"><!--1st row start  here-->
+   <div class="panel panel-default">
+   <div class="panel-body" style="background-color:lavender;text-align:center;font-family:Times New Roman">
+       <h2><i><b>PROJECT BOOK</b></i></h2>
+	   <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal" >
+          <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		  <div class="container-fluid" id="ab">
+<h3 id="demo"></h3>
+ <script>
+ function date_time()
+ {
+  var dt = new Date();
+  document.getElementById("demo").innerHTML = dt;
+  setTimeout(function(){ date_time(); }, 1000);
+ }
+date_time();
+</script></div>
+</div>
+     
+   
+  </div>  
+</div><!--ROW 1 END-->
+
+<div class="row">
+<div class="col-md-6" >
+	    
+	   <div class="container-fluid">
+	   
+  <h2></h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">SIGN UP</a></li>
+    <li><a data-toggle="tab" href="#menu1">LOGIN</a></li>
+       </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+     <div class="panel panel-warning"><!--pannel for sign up start here-->
+       <div class="panel-heading"  style="text-align:center;font-family:Times New Roman"><h5><b><span class="glyphicon glyphicon-pencil"></span>&nbsp;SIGN UP</b></h5></div>
+       <div class="panel-body">
+	  
+	     <form><!--form start here-->
+	  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+	<div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+	<div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" class="form-control" id="addr" placeholder="Enter address" name="addr">
+    </div>
+	<div class="form-group">
+      <label for="contactno">Contactno:</label>
+      <input type="number" class="form-control" id="ph" placeholder="Enter contact no" name="phno" min="1000000000" max="9999999999" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+	
+   
+      <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+     </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form><!--form end here-->	  
+</div>
+    </div>   </div><!--menu 1 end-->
+    <div id="menu1" class="tab-pane fade">
+     <div class="panel panel-danger"><!--pannel start here-->
+      <div class="panel-heading"  style="text-align:center;font-family:Times New Roman"><h5><b>  <span class="glyphicon glyphicon-lock"></span>&nbsp; LOGIN  </b></h5></div>
+      <div class="panel-body">
+	     <form><!--form start here-->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+	  
+	  </div><!--pannel body end here-->
+    </div><!--pannel end here-->
+	
+	
+	   </div><!--menu 2 end-->
+    </div><!--tab content end-->
+</div>
+	   
+	   
+</div><!--signin sign up-->
+<!--all carrosel in this half section  -->
+<div class="col-md-6" >
+<div class="container-fluid">
+
+
+
+<div class="panel panel-default"><!--pannel start--> <!--first carrosel start from here-->
+  <div class="panel-body">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy x..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is the..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/bk.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+          <p>You need to..
+	</p>
+     </div> </div>
+        
+      </div>
+	  </div>
+	  </div>
+      </div><!--1st img-->
+
+      <div class="item">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+          <p>You need to ..</p>
+     </div> </div>
+        
+      </div>
+	  </div>
+	  </div> </div><!--sec img-->
+    </div><!--list box end img-->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+</div><!--panel end--><!--first  carrosel end here-->
+  
+  <div class="panel panel-default"><!--pannel start--><!--second  carrosel sec start from here -->
+  <div class="panel-body">
+<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel1" data-slide-to="1"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/bk.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is the...</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+          <p>You need ...
+		  </p>
+     </div> </div>
+        
+      </div>
+	  </div>
+	  </div>
+      </div><!--1st img-->
+
+      <div class="item">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ....</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ...</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/bk.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+		  <p>health is ...</p>
+           </div> </div>
+        
+      </div>
+	  </div>
+	  </div> </div><!--sec img-->
+  
+    </div><!--list box end img-->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+</div><!--panel end--><!--second carrosel end here-->
+  
+  
+  
+  
+  <!---third carosel sec start here-->
+  
+  
+  
+  <div class="panel panel-default"><!--pannel start-->
+  <div class="panel-body">
+
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy x..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is the..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+          <p>You need to..
+	</p>
+     </div> </div>
+        
+      </div>
+	  </div>
+	  </div>
+      </div><!--1st img-->
+
+      <div class="item">
+        <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/bk.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>
+<div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/hel.jpg" alt="lbv" >
+          <p><strong>Naturopathy</strong></p>
+          <p>Naturopathy is ..</p>
+          
+		</div>  </div>
+       
+      </div>      
+    </div>	
+	
+	<div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+         <div class="panel-body">
+          <div class="thumbnail">
+          <img src="image/natu.jpg" alt="lbv">
+          <p><strong>Health</strong></p>
+          <p>You need to ..</p>
+     </div> </div>
+        
+      </div>
+	  </div>
+	  </div> </div><!--sec img-->
+    </div><!--list box end img-->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+</div><!--panel end--><!--third carrosel end here-->
+ 
+  </div><!--containerfluid end-->
+
+</div><!-- all carossel hall  section end here-->
+
+
+
+</div><!--sec row end-->
+
+
+ <!-- Modal  for button-->
+  <div class="modal fade" id="myModal" role="dialog"  >
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">category division</h4>
+        </div>
+        <div class="modal-body">
+          
+		  
+		  
+
+		  <div class="row">
+ <div class="col-sm-6 col-xs-12">
+
+
+<div class="container-fluid">
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Category1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+		
+		<button type="button" class="btn btn-link btn-xs">subcategory1.1</button></div>
+		
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Category2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"><button type="button" class="btn btn-link btn-xs">subcategory2.1</button></div>
+    </div>
+    
+  </div>
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Category3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"><button type="button" class="btn btn-link btn-xs">subcategory3.1</button></div>
+    </div>
+    
+  </div>   
+</div>
+</div>
+
+
+</div>
+<div class="col-sm-6 col-xs-12">
+
+
+<div class="container-fluid">
+
+
+
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>category4</th>
+        <th>category5</th>
+        <th>category6</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><li><a href="#">Topic 1</a></li></td>
+        <td><li><a href="#">Topic 1</a></li></td>
+        <td><li><a href="#">Topic 1</a></li></td>
+      </tr>
+      <tr>
+        <td><li><a href="#">Topic 2</a></li></td>
+        <td><li><a href="#">Topic 2</a></li></td>
+      <td><li><a href="#">Topic 2</a></li></td>
+      </tr>
+      <tr>
+       <td><li><a href="#">Topic 3</a></li></td>
+        <td><li><a href="#">Topic 3</a></li></td>
+       <td><li><a href="#">Topic 3</a></li></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+		</div></div>  
+		  </div><!---row end-->
+		  
+        </div><!---body end-->
+        <div class="modal-footer">
+		
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
